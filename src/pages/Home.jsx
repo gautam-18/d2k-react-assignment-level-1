@@ -29,7 +29,8 @@ function Home() {
 
   const indexOfLastPerson = currentPage * itemsPerPage;
   const indexOfFirstPerson = indexOfLastPerson - itemsPerPage;
-  const currentfilteredUsers = filteredUsers?.slice(
+
+  let currentfilteredUsers = filteredUsers?.slice(
     indexOfFirstPerson,
     indexOfLastPerson
   );
